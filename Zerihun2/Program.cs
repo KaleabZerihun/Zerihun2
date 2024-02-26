@@ -11,6 +11,8 @@ Global along with an interface named IView and an appropriate set of C# files as
 
 using System;
 using static System.Console;
+using static VikingNS.Global.Status;
+using static VikingNS.Global.Weapon;
 
 namespace VikingNS
 {
@@ -38,7 +40,7 @@ object of the viking class and then displays another content of the class.
             viking1.ViewV();
             WriteLine(" ");
 
-            Viking viking2 = new Viking("Ragnar", Global.Status.JARL, 250, Global.Weapon.SWORD, true); // Create another object
+            Viking viking2 = new Viking("Ragnar", JARL, 250, SWORD, true); // Create another object
             //Display its content
              WriteLine("Second Horizontal");
             viking2.ViewH();
